@@ -24,7 +24,7 @@ The system is deliberately bounded. APKs are treated as untrusted evidence, not 
 
 Testing against real-world APKs has driven work around oversized inputs, partial-analysis states, provenance, temporary-artifact cleanup, repeatability, and concurrent processing.
 
-**[Explore the APK Sentinel public showcase](https://github.com/tmtz1/apk-sentinel-public-showcase)**
+**[Explore the APK Sentinel repository](https://github.com/tmtz1/apk-sentinel)**
 
 ## What I Build
 
@@ -67,7 +67,7 @@ Failed assumptions are useful engineering evidence. When real-world testing brea
 
 Static Android APK triage designed for programmatic and agent-driven workflows.
 
-**[Technical showcase](https://github.com/tmtz1/apk-sentinel-public-showcase)**
+**[Project repository](https://github.com/tmtz1/apk-sentinel)**
 
 ### Willow & Birdie Innovations
 
