@@ -1,94 +1,40 @@
-# Tomas A. Martinez
+# T. Mtz
 
-**Founder / Principal | Willow & Birdie Innovations LLC**
+**Founder / Principal · Willow & Birdie Innovations LLC**
 
-I build practical software for difficult digital systems, with a focus on **digital forensics, applied AI, evidence processing, and automation**.
+I build evidence-first software for digital forensics and AI-assisted automation: deterministic outputs, explicit uncertainty, and bounded handling of untrusted data.
 
-My work tends to live where software has to do more than produce an answer. It has to explain **what it found, where it came from, and what the evidence actually supports**.
+The useful question is not only what a system found, but where the evidence came from and what it actually supports.
 
-## Current Work
+[APK Sentinel](https://github.com/tmtz1/apk-sentinel) · [Validation and hard cases](https://github.com/tmtz1/apk-sentinel/tree/main/docs) · [Engineering index](https://github.com/tmtz1/willow-birdie-public-showcase) · [Willow & Birdie](https://willowbirdie.com) · [Contact](mailto:admin@willowbirdie.com)
 
-### APK Sentinel
-
-**Deterministic, evidence-backed static APK triage for software agents and security workflows.**
-
-APK Sentinel accepts an Android APK and produces structured, machine-readable evidence about static characteristics, including:
-
-- permissions and manifest declarations
-- exported components and exposure
-- static API and behavioral indicators
-- deterministic rule contributions and risk scoring
-- versioned JSON output for downstream systems and agents
-
-The system is deliberately bounded. APKs are treated as untrusted evidence, not executed applications.
-
-Testing against real-world APKs has driven work around oversized inputs, partial-analysis states, provenance, temporary-artifact cleanup, repeatability, and concurrent processing.
-
-**[Explore the APK Sentinel repository](https://github.com/tmtz1/apk-sentinel)**
-
-## What I Build
-
-### Digital Forensics
-
-Evidence acquisition, normalization, provenance, analysis, and defensible reporting.
-
-### Applied AI and Agents
-
-Using language models and autonomous agents as components of larger systems rather than treating the model itself as the product.
-
-### Evidence-First Software
-
-Systems designed to distinguish observations, inferences, uncertainty, and unsupported claims.
-
-### Local and Private AI
-
-Practical architectures where sensitive data, models, or workflows can remain under the operator's control.
-
-### Automation and Tooling
-
-Turning complex technical workflows into repeatable software interfaces that humans and agents can both use.
-
-## Engineering Approach
-
-A few principles show up repeatedly in my work:
-
-- **Evidence over assertion.** Outputs should be traceable to what the system actually observed.
-- **Determinism where it matters.** The same evidence should produce the same result when the underlying rules have not changed.
-- **Explicit uncertainty.** Partial analysis should be represented as partial analysis, not quietly presented as complete.
-- **Fail closed.** Unsupported or malformed input should produce a defined failure state rather than an invented answer.
-- **Agents need contracts.** AI systems become much more useful when the tools around them expose stable schemas, bounded behavior, and predictable error states.
-- **Real inputs beat idealized tests.** Production-like edge cases are where architecture gets honest.
-
-Failed assumptions are useful engineering evidence. When real-world testing breaks an implementation, the important question is what the failure teaches us about the design.
-
-## Selected Projects
+## Current work
 
 ### APK Sentinel
 
-Static Android APK triage designed for programmatic and agent-driven workflows.
+A limited-beta, deterministic, automation-friendly API for static Android APK triage. It returns versioned, machine-readable evidence without installing or executing the submitted application.
 
-**[Project repository](https://github.com/tmtz1/apk-sentinel)**
+My work on APK Sentinel spans the API and evidence contract, bounded analysis architecture, validation methodology, product infrastructure, and public technical documentation.
 
-### Willow & Birdie Innovations
+The public evidence package covers architecture, sanitized reports, validation records, real-world failure cases, API contracts, and the security boundary. Failures became tests and explicit invariants instead of undocumented folklore.
 
-Applied software research and development spanning digital forensics, data analysis, AI-assisted workflows, and automation.
+[Explore APK Sentinel](https://github.com/tmtz1/apk-sentinel) · [Hard cases](https://github.com/tmtz1/apk-sentinel/blob/main/docs/real-world-hard-cases.md) · [Product documentation](https://apk-sentinel.willowbirdie.com/)
 
-**[Public engineering showcase](https://github.com/tmtz1/willow-birdie-public-showcase)**
+## Other work
 
-**[willowbirdie.com](https://www.willowbirdie.com/)**
+- **Digital forensics:** evidence acquisition, normalization, provenance, analysis, and defensible reporting.
+- **Local and private AI:** measured work on serving reliability, structured output, latency, context retention, and operational limits.
+- **RIVR:** research and engineering notes for ROVR and LightCone parsing.
 
-## Building for Humans and Agents
+## Engineering principles
 
-One area I am particularly interested in is the changing interface between software systems and AI agents.
-
-Traditional tools assume a human will read a screen, interpret an error, or decide what an ambiguous result means.
-
-Agent-facing systems need something different:
-
-**structured evidence | stable contracts | explicit state | bounded behavior | machine-readable errors**
-
-I am exploring what software looks like when an AI agent is a first-class consumer of the system rather than an afterthought.
+- Evidence over assertion
+- Determinism where repeatability matters
+- Partial results identify themselves as partial
+- Unsupported inputs fail explicitly
+- Stable contracts for humans and automated systems
+- Real inputs, regression tests, and cleanup are part of correctness
 
 ---
 
-*Practical software. Difficult digital systems. Claims supported by evidence.*
+**Willow & Birdie Innovations** · [Website](https://willowbirdie.com) · [Email](mailto:admin@willowbirdie.com)
