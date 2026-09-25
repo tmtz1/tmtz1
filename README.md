@@ -2,39 +2,35 @@
 
 **Founder / Principal · Willow & Birdie Innovations LLC**
 
-I build evidence-first software for digital forensics and AI-assisted automation: deterministic outputs, explicit uncertainty, and bounded handling of untrusted data.
+I build software that helps people inspect digital evidence, automate repetitive work, and understand what their data actually supports.
 
-The useful question is not only what a system found, but where the evidence came from and what it actually supports.
+My work combines digital forensics research, practical AI automation, and tools with repeatable, traceable results.
 
-[APK Sentinel](https://github.com/tmtz1/apk-sentinel) · [Validation and hard cases](https://github.com/tmtz1/apk-sentinel/tree/main/docs) · [Engineering index](https://github.com/tmtz1/willow-birdie-public-showcase) · [Willow & Birdie](https://willowbirdie.com) · [Contact](mailto:admin@willowbirdie.com)
+## Featured work
 
-## Current work
+| Project | Problem and evidence | Status |
+|---|---|---|
+| [APK Sentinel](https://github.com/tmtz1/apk-sentinel) | Static Android package inspection without execution. [Synthetic report](https://github.com/tmtz1/apk-sentinel/blob/main/examples/apk-sentinel-sanitized-report.json) and [hard cases](https://github.com/tmtz1/apk-sentinel/blob/main/docs/real-world-hard-cases.md). | Public evidence package; [current availability](https://github.com/tmtz1/apk-sentinel/blob/main/product-status.json). |
+| [Cloud model coding benchmark](https://github.com/tmtz1/willow-birdie-public-showcase/pull/1) | Four assistants repair the same receipt-validation defect. Frozen baseline, candidate code and offline acceptance tests. | Research; publication PR, not a general model ranking or live deployment. |
+| [RIVR](https://github.com/tmtz1/willow-birdie-public-showcase/blob/main/docs/rivr.md) | Read-only inspection of proprietary sensor recordings; inventory, timeline and viewer research. | Research; private implementation and public case study. |
 
-### APK Sentinel
+The benchmark's **model inference is cloud-hosted**; local execution refers to the harness and generated-code tests. Separate [local inference research](https://github.com/tmtz1/willow-birdie-public-showcase/blob/main/docs/local-inference-benchmark.md) covers locally served models and historical hardware measurements.
 
-A limited-beta, deterministic, automation-friendly API for static Android APK triage. It returns versioned, machine-readable evidence without installing or executing the submitted application.
+## My contribution
 
-My work on APK Sentinel spans the API and evidence contract, bounded analysis architecture, validation methodology, product infrastructure, and public technical documentation.
+APK Sentinel work spans the evidence/API contract, bounded analysis architecture, validation methodology and public technical documentation. Public records contain sanitized examples and explicit limits, not customer samples or proprietary implementation.
 
-The public evidence package covers architecture, sanitized reports, validation records, real-world failure cases, API contracts, and the security boundary. Failures became tests and explicit invariants instead of undocumented folklore.
-
-[Explore APK Sentinel](https://github.com/tmtz1/apk-sentinel) · [Hard cases](https://github.com/tmtz1/apk-sentinel/blob/main/docs/real-world-hard-cases.md) · [Product documentation](https://apk-sentinel.willowbirdie.com/)
-
-## Other work
-
-- **Digital forensics:** evidence acquisition, normalization, provenance, analysis, and defensible reporting.
-- **Local and private AI:** measured work on serving reliability, structured output, latency, context retention, and operational limits.
-- **RIVR:** research and engineering notes for ROVR and LightCone parsing.
+[Other work and project evidence](https://github.com/tmtz1/willow-birdie-public-showcase) · [RIVR case study](https://github.com/tmtz1/willow-birdie-public-showcase/blob/main/docs/rivr.md)
 
 ## Engineering principles
 
-- Evidence over assertion
-- Determinism where repeatability matters
-- Partial results identify themselves as partial
-- Unsupported inputs fail explicitly
-- Stable contracts for humans and automated systems
-- Real inputs, regression tests, and cleanup are part of correctness
+- Evidence over assertion; explain what a result supports.
+- Repeatable outputs with explicit uncertainty and partial-analysis states.
+- Unsupported inputs fail clearly.
+- Real inputs, regression tests and cleanup are part of correctness.
 
----
+## Contact
 
-**Willow & Birdie Innovations** · [Website](https://willowbirdie.com) · [Email](mailto:admin@willowbirdie.com)
+For integrations, pilot discussions or business inquiries: [admin@willowbirdie.com](mailto:admin@willowbirdie.com). Do not email private samples or credentials.
+
+**Willow & Birdie Innovations** · *In Data There is Truth* · [Website](https://willowbirdie.com)
